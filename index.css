@@ -275,4 +275,16 @@ ul > li:hover a
         width: 150px;
         height: 80px;
     }
+    .ligne, .revers,.text,.imgage
+    {
+        flex-direction: column;
+    }
+    .imgage
+    {
+        width: 40%;
+    }
+    .text > .titre, .text > p
+    {
+        text-align: center;
+    }
 }
