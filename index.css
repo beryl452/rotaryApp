@@ -214,6 +214,20 @@ ul > li:hover a
 {
     color: gold;
 }
+.swiper-container {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 360px;
+  height: 100vh;
+  background-repeat: no-repeat;
+  
+}
 @media (max-width:952px)
 {
     .app-store img{

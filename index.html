@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
     <link rel="shortcut icon" href="logo.png">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-   <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="index.css">
     <title>Rotary</title>
 </head>
 <body>
@@ -136,6 +138,20 @@
          </div>
          </div>
     </main>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide img-fluid" style="background-image:url(capture1.png)"></div>
+          <div class="swiper-slide img-fluid" style="background-image:url(capture2.png)"></div>
+          <div class="swiper-slide img-fluid" style="background-image:url(capture3.png)"></div>
+          <div class="swiper-slide img-fluid" style="background-image:url(capture4.png)"></div>
+          <div class="swiper-slide img-fluid" style="background-image:url(don.png)"></div>
+          <div class="swiper-slide img-fluid" style="background-image:url(forum.png)"></div>
+          <div class="swiper-slide img-fluid" style="background-image:url(pageInscrip1.png)"></div>
+          <div class="swiper-slide img-fluid" style="background-image:url(pays.png)"></div>
+        </div>
+        <!-- Add Pagination -->
+        <!-- <div class="swiper-pagination"></div>
+      </div> -->
     <footer>
         <div class="contain_p">
            <section class="contain_con1">
@@ -172,5 +188,26 @@
         AOS.init();
       </script>
       <script src="//code.tidio.co/m5di3tno8tcdfpceuopgzxenztiesgsc.js" async></script>
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <script>
+          var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+              rotate: 20,
+              stretch: 0,
+              depth: 200,
+              modifier: 1,
+              slideShadows: true,
+            },
+            loop: true,
+              autoplay: {
+              delay: 1000,
+              disableOnInteraction: false,
+              },
+          });
+      </script>
 </body>
 </html>
